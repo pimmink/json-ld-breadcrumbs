@@ -93,7 +93,7 @@ if ( ! class_exists( 'JSON_LD_Breadcrumbs' ) ) {
 			// TODO: Add option in the admin panel to enable or disable home page in breadcrumb.
 			// TODO: Add option in the admin panel to choose the text for home page.
 			$this->add_crumb(
-				'Home',
+				get_bloginfo('name'),
 				get_site_url()
 			);
 		}
